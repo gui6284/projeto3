@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do seu projeto e serviços.">
+    <meta name="keywords" content="reciclagem, prótese, contato">
+    <title>Site do projeto</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #88dd88;
+            color: #333;
+            overflow-x: hidden;
+            animation: fadeIn 1s ease-in-out;
+            font-size: 18px; /* Aumentando o tamanho da fonte geral */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 2.8em; /* Aumentando o tamanho do título */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1px;
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        nav button {
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px; /* Aumentando o padding do botão */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+            font-size: 1.3em; /* Aumentando o tamanho da fonte do botão */
+        }
+
+        nav button:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(76, 175, 80, 0.6);
+        }
+
+        section {
+            padding: 40px; /* Aumentando o padding das seções */
+            max-width: 1000px; /* Aumentando o tamanho máximo da seção */
+            margin: 40px auto; /* Mais espaço entre as seções */
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideIn 2s forwards;
+            visibility: hidden;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .alinharimg {
+            display: flex;
+            justify-content: center; 
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0; /* Aumentando o padding do rodapé */
+            background-color: #004d40;
+            color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em; 
+            }
+            nav button {
+                padding: 10px 20px; 
+                font-size: 1.1em; 
+            }
+        }
+        .alinharimg img {
+            max-width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre"><button>Reciclagem</button></a></li>
+                <li><a href="#servicos"><button>Funcionamento</button></a></li>
+                <li><a href="#final"><button>Final</button></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Reciclagem</h2>
+        <div class="alinharimg">
+            <img src="Reciclagem.jpg" alt="Imagem de uma prótese de braço">
+        </div>
+        <p>A reciclagem é uma das ferramentas mais poderosas que temos para proteger o meio ambiente e reduzir a quantidade de resíduos que acabam em aterros. Quando reciclamos, estamos não apenas conservando recursos naturais, mas também transformando materiais descartados em novas oportunidades.</p>
+        
+        <p>Um exemplo incrível de como a reciclagem pode fazer a diferença é o uso de materiais reciclados para criar próteses. Tradicionalmente, a fabricação de próteses envolve o uso de materiais caros e processos complexos, o que pode tornar esses dispositivos inacessíveis para muitas pessoas ao redor do mundo. No entanto, graças à reciclagem, materiais como plásticos e metais recuperados podem ser reutilizados para construir próteses funcionais e acessíveis, devolvendo mobilidade e independência para pessoas com deficiência.</p>
+
+        <p>Além de promover a inclusão, a fabricação de próteses a partir de materiais reciclados contribui para a sustentabilidade, reduzindo a demanda por novos materiais e minimizando o impacto ambiental da produção. Cada peça reciclada usada em uma prótese é uma vitória não apenas para o meio ambiente, mas também para as pessoas que se beneficiam dessas tecnologias transformadoras.</p>
+        
+        <p>Nosso projeto acredita no poder da reciclagem para criar um futuro mais inclusivo e sustentável. Ao transformar resíduos em esperança, estamos mostrando que materiais descartados podem ter um novo propósito e que, juntos, podemos fazer a diferença.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Funcionamento</h2>
+        <div class="alinharimg">
+            <img src="peças.jpg" alt="Descrição da Imagem do Serviço">
+        </div>
+        <p>O nosso projeto de prótese de braço utiliza materiais acessíveis e tecnologias simples para criar uma solução funcional e de baixo custo para pessoas com amputações ou limitações nos membros superiores. Aqui está como a prótese funciona:</p>
+
+        <p>Inicialmente, a estrutura da prótese foi feita com garrafas PET, mas foi substituída por um galão de água revestido com gesso, o que melhorou a resistência e o conforto para o usuário. O controle dos movimentos é feito por um <strong>servo motor 996</strong>, que é responsável pela movimentação da mão da prótese, enquanto o <strong>Arduino Uno</strong> controla o sistema.</p>
+    </section>
+
+    <section id="final">
+        <div class="alinharimg">
+            <img src="final.jpg" alt="Descrição da Imagem do Serviço">
+        </div>
+        <h2>Final</h2>
+        <p>Após substituir os materiais, os resultados melhoraram significativamente, mas o feedback indicou que ainda há espaço para melhorias, especialmente no controle dos movimentos e no conforto do usuário.</p>
+        <p>O projeto permitiu ao grupo aplicar conhecimentos práticos em eletrônica, programação e design de produtos. Aprendemos sobre a importância de selecionar materiais adequados e como integrar componentes mecânicos e eletrônicos de forma eficiente.</p>
+        <p>Para o futuro, sugerimos utilizar materiais mais leves e resistentes, como fibra de carbono, e incorporar sensores mais avançados para aumentar o controle dos movimentos e a funcionalidade geral do braço.</p>
+    </section>
+
+    <footer id="contato">
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para mostrar animações nas seções quando são visíveis
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.visibility = 'visible';
+                    entry.target.style.animation = 'slideIn 2s forwards';
+                }
+            });
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Função para rolagem suave
+        const buttons = document.querySelectorAll('nav a');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault(); // Impede o comportamento padrão de clique
+                const targetId = button.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                targetSection.scrollIntoView({ 
+                    behavior: 'smooth' // Adiciona rolagem suave
+                });
+            });
+        });
+    </script>
+</body>
+</html>
