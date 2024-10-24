@@ -50,11 +50,11 @@ nav button {
     background-color: #4caf50;
     color: #ffffff;
     border: none;
-    padding: 10px 20px; /* Aumento sutil no padding */
-    border-radius: 6px; /* Leve aumento nas bordas */
+    padding: 8px 12px;
+    border-radius: 5px; /* Mantendo bordas arredondadas */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-    font-size: 1.2em; /* Aumento sutil no tamanho da fonte */
+    font-size: 1.1em; 
 }
 
 nav button:hover {
@@ -101,8 +101,8 @@ footer {
     }
 
     nav button {
-        padding: 8px 16px; /* Leve aumento para telas menores */
-        font-size: 1.1em; /* Aumento sutil na fonte em dispositivos pequenos */
+        padding: 6px 12px; /* Redução no padding para telas menores */
+        font-size: 1em; /* Fonte ainda menor em dispositivos pequenos */
     }
 }
 
