@@ -5,17 +5,20 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
 header {
     background-color: #2a2a2a; 
     color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 h1 {
     text-align: center;
     margin: 0;
     font-size: 2.5em; 
 }
+
 nav {
     display: flex;
     justify-content: center;
@@ -23,42 +26,70 @@ nav {
     margin-top: 10px;
     flex-wrap: wrap; /* Permite o ajuste para telas menores */
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     gap: 20px;
 }
+
 nav a {
     color: #00ffcc; 
     text-decoration: none;
     font-size: 1.2em; 
     transition: color 0.3s;
 }
+
 nav a:hover {
     color: #ffcc00; /* Cor ao passar o mouse */
 }
+
 nav button {
     background-color: #00ffcc; 
     color: #000;
     border: none;
-    padding: 10px 20px;
+    padding: 4px 10px; /* Padding bem reduzido */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-    margin-left: 20px;
-    font-size: 1.2em; 
+    margin-left: 5px; /* Margem lateral mínima */
+    font-size: 0.9em; /* Tamanho de fonte reduzido */
     box-shadow: 0 4px 10px rgba(0, 204, 153, 0.4); /* Sombra do botão */
+    white-space: nowrap; /* Evita quebra de linha */
+    width: auto; /* Garante que o botão só ocupe o espaço necessário */
 }
+
 nav button:hover {
     background-color: #00cc99; /* Efeito ao passar o mouse */
     transform: translateY(-2px); /* Leve movimento para cima */
     box-shadow: 0 6px 12px rgba(0, 204, 153, 0.6); /* Sombra ao passar o mouse */
 }
+
 nav button:focus {
     outline: none; /* Remove o contorno padrão de focar */
     box-shadow: 0 0 0 4px rgba(0, 255, 204, 0.5); /* Sombra ao focar */
 }
+
+/* Ajustes para telas médias */
+@media (max-width: 768px) {
+    nav button {
+        font-size: 0.8em; /* Fonte ainda menor */
+        padding: 3px 8px; /* Padding menor */
+        margin-left: 4px;
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+    nav button {
+        font-size: 0.7em; /* Fonte bem pequena */
+        padding: 2px 6px; /* Padding mínimo */
+        margin-left: 2px;
+        width: auto; /* Deixa o botão com largura automática */
+    }
+}
+
 section {
     padding: 20px;
     max-width: 800px; 
@@ -67,11 +98,13 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 img {
     max-width: 100%; 
     height: auto;
     border-radius: 5px;
 }
+
 footer {
     text-align: center;
     padding: 20px 0;
