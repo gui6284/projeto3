@@ -2,12 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #88dd88;
     color: #333;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-in-out;
+    font-size: 18px; /* Aumentando o tamanho da fonte geral */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 header {
-    background-color: #2a2a2a; 
+    background-color: #333;
     color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -16,101 +24,88 @@ header {
 h1 {
     text-align: center;
     margin: 0;
-    font-size: 2.5em; 
+    font-size: 2.8em; /* Aumentando o tamanho do título */
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    flex-wrap: wrap; /* Permite o ajuste para telas menores */
+    margin-top: 1px;
+    flex-wrap: wrap;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav a {
-    color: #00ffcc; 
     text-decoration: none;
-    font-size: 1.2em; 
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffcc00; /* Cor ao passar o mouse */
 }
 
 nav button {
-    background-color: #00ffcc; 
-    color: #000;
+    background-color: #4caf50;
+    color: #ffffff;
     border: none;
-    padding: 4px 10px; /* Padding bem reduzido */
-    border-radius: 5px;
+    padding: 10px 20px; /* Aumento sutil no padding */
+    border-radius: 6px; /* Leve aumento nas bordas */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
-    margin-left: 5px; /* Margem lateral mínima */
-    font-size: 0.9em; /* Tamanho de fonte reduzido */
-    box-shadow: 0 4px 10px rgba(0, 204, 153, 0.4); /* Sombra do botão */
-    white-space: nowrap; /* Evita quebra de linha */
-    width: auto; /* Garante que o botão só ocupe o espaço necessário */
+    font-size: 1.2em; /* Aumento sutil no tamanho da fonte */
 }
 
 nav button:hover {
-    background-color: #00cc99; /* Efeito ao passar o mouse */
-    transform: translateY(-2px); /* Leve movimento para cima */
-    box-shadow: 0 6px 12px rgba(0, 204, 153, 0.6); /* Sombra ao passar o mouse */
-}
-
-nav button:focus {
-    outline: none; /* Remove o contorno padrão de focar */
-    box-shadow: 0 0 0 4px rgba(0, 255, 204, 0.5); /* Sombra ao focar */
-}
-
-/* Ajustes para telas médias */
-@media (max-width: 768px) {
-    nav button {
-        font-size: 0.8em; /* Fonte ainda menor */
-        padding: 3px 8px; /* Padding menor */
-        margin-left: 4px;
-    }
-}
-
-/* Ajustes para telas pequenas */
-@media (max-width: 480px) {
-    nav button {
-        font-size: 0.7em; /* Fonte bem pequena */
-        padding: 2px 6px; /* Padding mínimo */
-        margin-left: 2px;
-        width: auto; /* Deixa o botão com largura automática */
-    }
+    background-color: #388e3c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.6);
 }
 
 section {
-    padding: 20px;
-    max-width: 800px; 
-    margin: 20px auto;
+    padding: 40px; /* Aumentando o padding das seções */
+    max-width: 1000px; /* Aumentando o tamanho máximo da seção */
+    margin: 40px auto; /* Mais espaço entre as seções */
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 2s forwards;
+    visibility: hidden;
 }
 
-img {
-    max-width: 100%; 
-    height: auto;
-    border-radius: 5px;
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.alinharimg {
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0;
 }
 
 footer {
     text-align: center;
-    padding: 20px 0;
-    background-color: #2a2a2a;
+    padding: 30px 0; /* Aumentando o padding do rodapé */
+    background-color: #004d40;
     color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    nav button {
+        padding: 8px 16px; /* Leve aumento para telas menores */
+        font-size: 1.1em; /* Aumento sutil na fonte em dispositivos pequenos */
+    }
+}
+
+.alinharimg img {
+    max-width: 20%;
 }
